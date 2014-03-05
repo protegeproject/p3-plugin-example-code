@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+
+Name: examples/tabwidget/FrameCounter.class
+Tab-Widget: True
+
+Name: examples/slotwidget/StringInverter.class
+Slot-Widget: True
+
+Name: examples/backend/ExampleBackend.class
+Storage-Factory: True
+
+Name: examples/projectplugin/MenuItemInserter.class
+Project-Plugin: True
+
+Name: examples/createprojectplugin/FooCreator.class
+Create-Project-Plugin: True
+
+Name: examples/exportplugin/FooExporter.class
+Export-Plugin: True
+
+
+
