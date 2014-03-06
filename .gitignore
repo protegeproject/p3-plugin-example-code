@@ -1,0 +1,11 @@
+*.class
+
+###############
+# Eclipse
+###############
+
+.project
+.classpath
+.settings/
+bin/**
+plugins/**
