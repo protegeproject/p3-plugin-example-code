@@ -8,3 +8,10 @@
 .classpath
 .settings/
 /plugins
+
+###############
+# Protege
+###############
+
+logs/
+protege.properties
