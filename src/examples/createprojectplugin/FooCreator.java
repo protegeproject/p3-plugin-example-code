@@ -1,19 +1,28 @@
 package examples.createprojectplugin;
 
-import java.awt.*;
-import java.io.*;
-import java.util.*;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
 
-import javax.swing.*;
-import javax.swing.event.*;
+import javax.swing.JPanel;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
-
-import edu.stanford.smi.protege.*;
-import edu.stanford.smi.protege.model.*;
-import edu.stanford.smi.protege.plugin.*;
-import edu.stanford.smi.protege.storage.clips.*;
-import edu.stanford.smi.protege.util.*;
-import examples.backend.*;
+import edu.stanford.smi.protege.Application;
+import edu.stanford.smi.protege.model.KnowledgeBase;
+import edu.stanford.smi.protege.model.KnowledgeBaseFactory;
+import edu.stanford.smi.protege.model.Project;
+import edu.stanford.smi.protege.plugin.AbstractCreateProjectPlugin;
+import edu.stanford.smi.protege.plugin.CreateProjectWizard;
+import edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory;
+import edu.stanford.smi.protege.util.FileField;
+import edu.stanford.smi.protege.util.FileUtilities;
+import edu.stanford.smi.protege.util.Wizard;
+import edu.stanford.smi.protege.util.WizardPage;
 
 public class FooCreator extends AbstractCreateProjectPlugin {
     private File fooFile;
