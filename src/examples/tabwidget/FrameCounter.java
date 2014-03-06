@@ -10,7 +10,8 @@ import edu.stanford.smi.protege.resource.*;
 
 // an example tab
 public class FrameCounter extends AbstractTabWidget {
-    private static final int MAX_FRAMES = 200;
+	private static final long serialVersionUID = -3874671333236074707L;
+	private static final int MAX_FRAMES = 200;
     private JTextField field;
 
     // startup code

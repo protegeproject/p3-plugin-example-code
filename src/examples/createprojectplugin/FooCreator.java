@@ -90,7 +90,8 @@ public class FooCreator extends AbstractCreateProjectPlugin {
 }
 
 class FooFilesWizardPage extends WizardPage {
-    private FooCreator plugin;
+	private static final long serialVersionUID = -7445162904572359816L;
+	private FooCreator plugin;
     private FileField fileField;
     
     FooFilesWizardPage(Wizard wizard, FooCreator plugin) {

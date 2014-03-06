@@ -10,7 +10,8 @@ import edu.stanford.smi.protege.util.*;
 import edu.stanford.smi.protege.widget.*;
 
 public class StringInverter extends AbstractSlotWidget {
-    private static final String TEXT_BOLD_PROPERTY = "text_is_bold";
+	private static final long serialVersionUID = -8183561387428676185L;
+	private static final String TEXT_BOLD_PROPERTY = "text_is_bold";
     private static final String BACKGROUND_COLOR_PROPERTY = "background_color";
     private static final String COLOR_GREEN = "green";
     private static final String COLOR_PINK = "pink";
@@ -26,7 +27,8 @@ public class StringInverter extends AbstractSlotWidget {
         configureTextField();
 
         invertAction = new AbstractAction("Invert String", getInvertIcon()) {
-            public void actionPerformed(ActionEvent event) {
+			private static final long serialVersionUID = -2289385915311536270L;
+			public void actionPerformed(ActionEvent event) {
                 StringBuffer buf = new StringBuffer(field.getText());
                 buf.reverse();
                 field.setText(buf.toString());
@@ -169,7 +171,8 @@ public class StringInverter extends AbstractSlotWidget {
 }
 
 class StringInverterConfigurationPanel extends AbstractValidatableComponent {
-    private StringInverter widget;
+	private static final long serialVersionUID = -8997892386994255019L;
+	private StringInverter widget;
     private JCheckBox isBoldCheckBox;
     private JComboBox backgroundColorComboBox;
     
@@ -209,7 +212,8 @@ class StringInverterConfigurationPanel extends AbstractValidatableComponent {
 }
 
 class ColorRenderer extends DefaultRenderer {
-    public void load(Object o) {
+	private static final long serialVersionUID = 8038327633947785427L;
+	public void load(Object o) {
         Color color = (Color) o;
         if (color.equals(Color.PINK)) {
             setMainText("Pink");

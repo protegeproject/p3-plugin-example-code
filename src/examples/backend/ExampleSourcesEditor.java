@@ -10,7 +10,8 @@ import edu.stanford.smi.protege.util.*;
  *  Editor for fields specific to this backend.
  */
 public class ExampleSourcesEditor extends KnowledgeBaseSourcesEditor {
-    private FileField clsesField;
+	private static final long serialVersionUID = 6644561615886047674L;
+	private FileField clsesField;
     private FileField itsInstancesField;
 
     /**
